@@ -5,7 +5,7 @@ var client = null;
 module.exports.setApiKey = function (key) {
   client = new TwoClient(key, {
     timeout: 60000,
-    polling: 5000,
+    polling: 1000,
     throwErrors: false
   });
 };
